@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Office Problem Submission</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Send inn problemet ditt</h1>
+        <form action="thankyou.html" method="post">
+            <label for="name">Navnet ditt:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Din E-Post:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="problemTitle">Problemtittel:</label>
+            <input type="text" id="problemTitle" name="problemTitle" required>
+            
+            <label for="problemCategory">Kategori:</label>
+            <select id="problemCategory" name="problemCategory" required>
+                <option value="IT">IT</option>
+                <option value="Facilities">Fasiliteter</option>
+                <option value="HR">HR</option>
+                <option value="Other">Other</option>
+            </select>
+            
+            <label for="problemDescription">Problem Beskrivelse:</label>
+            <textarea id="problemDescription" name="problemDescription" rows="4" required></textarea>
+            
+            <label for="problemPriority">Prioritet:</label>
+            <select id="problemPriority" name="problemPriority" required>
+                <option value="low">Lav</option>
+                <option value="medium">Medium</option>
+                <option value="high">Høy</option>
+            </select>
+            
+            <label for="problemAttachment">Vedlegg:</label>
+            <input type="file" id="problemAttachment" name="problemAttachment">
+            
+            <input type="submit" value="Submit Problem">
+        </form>
+    </div>
+</body>
+</html>
