@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Office Problem Submission</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Submit a Problem</h1>
+        <form action="submit.php" method="post">
+            <label for="problemTitle">Problem Title:</label>
+            <input type="text" id="problemTitle" name="problemTitle" required>
+            
+            <label for="problemDescription">Problem Description:</label>
+            <textarea id="problemDescription" name="problemDescription" rows="4" required></textarea>
+            
+            <label for="problemPriority">Priority:</label>
+            <select id="problemPriority" name="problemPriority" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            
+            <label for="problemAttachment">Attachment:</label>
+            <input type="file" id="problemAttachment" name="problemAttachment">
+            
+            <input type="submit" value="Submit Problem">
+        </form>
+    </div>
+</body>
+</html>
