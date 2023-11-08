@@ -8,23 +8,33 @@
     <div class="container">
         <h1>Submit a Problem</h1>
         <form action="submit.php" method="post">
-            <label for="problemTitle">Problem Title:</label>
-            <input type="text" id="problemTitle" name="problemTitle" required>
+            <div class="form-group">
+                <label for="problemTitle">Problem Title:</label>
+                <input type="text" id="problemTitle" name="problemTitle" required>
+            </div>
             
-            <label for="problemDescription">Problem Description:</label>
-            <textarea id="problemDescription" name="problemDescription" rows="4" required></textarea>
+            <div class="form-group">
+                <label for="problemDescription">Problem Description:</label>
+                <textarea id="problemDescription" name="problemDescription" rows="4" required></textarea>
+            </div>
             
-            <label for="problemPriority">Priority:</label>
-            <select id="problemPriority" name="problemPriority" required>
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
-            </select>
+            <div class="form-group">
+                <label for="problemPriority">Priority:</label>
+                <select id="problemPriority" name="problemPriority" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
             
-            <label for="problemAttachment">Attachment:</label>
-            <input type="file" id="problemAttachment" name="problemAttachment">
+            <div class="form-group">
+                <label for="problemAttachment">Attachment:</label>
+                <input type="file" id="problemAttachment" name="problemAttachment">
+            </div>
             
-            <input type="submit" value="Submit Problem">
+            <div class="form-group">
+                <input type="submit" value="Submit Problem">
+            </div>
         </form>
     </div>
 </body>
