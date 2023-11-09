@@ -8,10 +8,10 @@
     <div class="container">
         <h1>Send inn problemet ditt</h1>
         <form action="thankyou.html" method="post">
-            <label for="name">Navnet ditt:</label>
+            <label for="name">Navn:</label>
             <input type="text" id="name" name="name" required>
             
-            <label for="email">Din E-Post:</label>
+            <label for="email">E-Post:</label>
             <input type="email" id="email" name="email" required>
             
             <label for="problemTitle">Problemtittel:</label>
@@ -19,9 +19,12 @@
             
             <label for="problemCategory">Kategori:</label>
             <select id="problemCategory" name="problemCategory" required>
-                <option value="IT">IT</option>
+                <option value="IT">IT (Informasjonsteknologi)</option>
                 <option value="Facilities">Fasiliteter</option>
-                <option value="HR">HR</option>
+                <option value="HR">HR (Menneskelige Ressurser)</option>
+                <option value="Communication">Kommunikasjon</option>
+                <option value="Health and safety">Helse og sikkerhet</option>
+                <option value="Travel and Transportation">Reise og transport</option>
                 <option value="Other">Other</option>
             </select>
             
